@@ -48,10 +48,11 @@ permalink: /blog/categories/your_category_name/
 {% endfor %}
 </div>
 ```
+![graphviz.png]({{site.baseurl}}/_posts/graphviz.png)
 
 Using the category, all the posts associated with the category will be listed on
 `http://localhost:4000/blog/categories/your_category_name`
 
 
-![graphviz.png]({{site.baseurl}}/_posts/graphviz.png)
+
 
