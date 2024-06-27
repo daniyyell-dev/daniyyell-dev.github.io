@@ -1,27 +1,14 @@
 ---
-name: daniyyell
+layout: author
+name: Daniyyell
 username: daniyyell
-bio: 'Full Stack Web Developer, based in Bangalore, India'
-site: 'https://daniyyell.com'
-avatar: 'https://github.com/daniyyell-dev/daniyyell-dev.github.io/blob/master/assets/img/authors/johndoe.png'
-email: mail@daniyyell.com
+bio: "Senior Security Operations Analyst at FortifyIT | Leading Security Operations, Handling Threat Intelligence, and Ensuring 24/7 Security Monitoring with Expertise in Various SOAR Integrations for SIEM Solutions."
+site: https://daniyyell.com
+avatar: johndoe.png
+email: daniyyell@bugcrowdninja.com
 social:
-  - title: github
-    url: 'https://github.com/daniyyell-dev'
-  - title: linkedin
-    url: 'https://www.linkedin.com/in/daniel-jeremiah/'
+  - title: "github"
+    url: "https://github.com/daniyyell-dev"
+  - title: "linkedin"
+    url: "https://www.linkedin.com/in/daniel-jeremiah/"
 ---
-# Add Authors here
-
-daniyyell:
-   name: daniyyell
-   username: daniyyell
-   site: https://daniyyell.com
-   avatar: 'https://github.com/daniyyell-dev/daniyyell-dev.github.io/blob/master/assets/img/authors/johndoe.png'
-   bio: 'Full Stack Web Developer, based in Bangalore, India'
-   email: daniyyell@bugcrowdninja.com
-   social:
-      - title: github
-        url: 'https://github.com/daniyyell-dev'
-      - title: linkedin
-        url: 'https://www.linkedin.com/in/daniel-jeremiah/'
