@@ -14,16 +14,6 @@ permalink: /about/
 
 **Senior Security Operations Analyst** based in the United Kingdom, leading security operations, handling threat intelligence, and ensuring 24/7 security monitoring with expertise in various SOAR integrations for SIEM solutions. With a passion for cybersecurity, I strive to protect and secure systems from emerging threats.
 
-
-<p align="center">
-  <a href="https://github.com/daniyyell-dev">
-    <img src="https://img.shields.io/badge/GitHub-333?style=for-the-badge&logo=github" alt="GitHub">
-  </a>
-  <a href="https://www.linkedin.com/in/daniel-jeremiah/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin" alt="LinkedIn">
-  </a>
-</p>
-
 <h2 align="center">Github Repository Statistics</h2>
 <p align="center">
   <img width="47%" src="https://github-readme-stats.vercel.app/api?username=daniyyell-dev&show_icons=true&theme=tokyonight" />
