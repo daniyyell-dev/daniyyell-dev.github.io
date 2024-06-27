@@ -1,15 +1,12 @@
-# Add Authors here
-
-daniyyell:
-   name: daniyyell
-   username: daniyyell
-   site: https://daniyyell.com
-   avatar: xplor4r.png
-   bio: "Full Stack Web Developer, based in Bangalore, India"
-   email: daniyyell@bugcrowdninja.com
-   social:
-      - title: "github"
-        url: "https://github.com/daniyyell-dev"
-      - title: "linkedin"
-        url: "https://www.linkedin.com/in/daniel-jeremiah/"
-
+---
+name: Daniyyell # Name of the Author
+username: daniyyell # Username of the Author
+bio: "Senior Security Operations Analyst based in the United Kingdom, somewhere around 0x02." # Author Bio
+site: https://daniyyell.com  # Author Website URL
+avatar: xplor4r.png  # Profile Image (img path will be /assets/img/authors/xplor4r.png)
+email: daniyyell@bugcrowdninja.com  # Author Email address
+social:  # Author Social profile links
+    - title: "github"
+      url: "https://github.com/daniyyell-dev"
+    - title: "linkedin"
+      url: "https://www.linkedin.com/in/daniel-jeremiah/"
