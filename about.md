@@ -14,10 +14,6 @@ permalink: /about/
 
 **Senior Security Operations Analyst** based in the United Kingdom, leading security operations, handling threat intelligence, and ensuring 24/7 security monitoring with expertise in various SOAR integrations for SIEM solutions. With a passion for cybersecurity, I strive to protect and secure systems from emerging threats.
 
-### Contact Information
-
-- **<i class="fas fa-envelope"></i> Email**: [daniyyell@bugcrowdninja.com](mailto:daniyyell@bugcrowdninja.com)
-- **<i class="fas fa-globe"></i> Website**: [https://daniyyell.com](https://daniyyell.com)
 
 <p align="center">
   <a href="https://github.com/daniyyell-dev">
