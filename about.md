@@ -19,14 +19,6 @@ permalink: /about/
 - **<i class="fas fa-envelope"></i> Email**: [daniyyell@bugcrowdninja.com](mailto:daniyyell@bugcrowdninja.com)
 - **<i class="fas fa-globe"></i> Website**: [https://daniyyell.com](https://daniyyell.com)
 
-### Social Profiles
-
-<p align="center">
-  <a href="https://github.com/daniyyell-dev"><i class="fab fa-github fa-2x"></i></a>
-  <a href="https://www.linkedin.com/in/daniel-jeremiah/"><i class="fab fa-linkedin fa-2x"></i></a>
-  <a href="https://twitter.com/dani_yyell"><i class="fab fa-twitter fa-2x"></i></a>
-</p>
-
 <p align="center">
   <a href="https://github.com/daniyyell-dev">
     <img src="https://img.shields.io/badge/GitHub-333?style=for-the-badge&logo=github" alt="GitHub">
