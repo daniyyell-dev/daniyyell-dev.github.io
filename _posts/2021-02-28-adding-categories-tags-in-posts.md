@@ -27,12 +27,6 @@ category: ['jekyll', 'guides', 'sample_category']
 ---
 ```
 
----
-layout: post
-title: "Demo Article"
-author: daniyyell
----
-
 
 Then to render this category using link and pages. All we need to do is,
 
