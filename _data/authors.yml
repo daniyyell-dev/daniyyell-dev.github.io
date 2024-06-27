@@ -1,7 +1,7 @@
 daniyyell:
   name: Daniyyell
   username: daniyyell
-  bio: "Senior Security Operations Analyst based in the United Kingdom, somewhere around 0x02."
+  bio: "Senior Security Operations Analyst at FortifyIT | Leading Security Operations, Handling Threat Intelligence, and Ensuring 24/7 Security Monitoring with Expertise in Various SOAR Integrations for SIEM Solutions."
   site: https://daniyyell.com
   avatar: xplor4r.png
   email: daniyyell@bugcrowdninja.com
@@ -10,3 +10,5 @@ daniyyell:
       url: "https://github.com/daniyyell-dev"
     - title: "linkedin"
       url: "https://www.linkedin.com/in/daniel-jeremiah/"
+
+
