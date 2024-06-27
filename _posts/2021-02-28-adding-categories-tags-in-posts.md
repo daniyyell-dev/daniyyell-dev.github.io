@@ -27,6 +27,13 @@ category: ['jekyll', 'guides', 'sample_category']
 ---
 ```
 
+---
+layout: post
+title: "Demo Article"
+author: daniyyell
+---
+
+
 Then to render this category using link and pages. All we need to do is,
 
 1. Create a new file with [your_category_name].md inside categories folder.
@@ -52,7 +59,3 @@ permalink: /blog/categories/your_category_name/
 
 Using the category, all the posts associated with the category will be listed on
 `http://localhost:4000/blog/categories/your_category_name`
-
-
-
-
