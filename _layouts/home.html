@@ -1,13 +1,16 @@
- <main>
-        {% for post in site.posts %}
-            <article>
-                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                <p>{{ post.excerpt }}</p>
-                <div class="author-info">
-                    <img src="{{ post.author.avatar }}" alt="{{ post.author.name }}" style="width: 50px; height: 50px; border-radius: 50%;">
-                    <p>By {{ post.author.name }}</p>
-                </div>
-            </article>
-        {% endfor %}
-    </main>
+---
+layout: full-width
+---
 
+<script>
+  $(document).ready(function() {
+    $("#typewriteText").typewrite({
+      actions: [{ type: "{{site.typewrite-text}}" }]
+    });
+  });
+</script>
+    <!-- hero section-->
+    {%- include hero.html -%}
+    <div class="col-lg-8 offset-md-2">
+      {%- include recent_articles.html -%}
+    </div>
