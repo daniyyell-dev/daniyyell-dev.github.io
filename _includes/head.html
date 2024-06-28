@@ -1,52 +1,64 @@
 <head>
   <meta charset="utf-8" />
   <title>
-    {% if {page.title %}{{ page.title }} - {{site.title}}{% else %}{{ site.title }} - {{
-    site.subtitle }}{% endif %}
+    {% if page.title %}{{ page.title }} - {{site.title}}{% else %}{{ site.title }} - {{ site.subtitle }}{% endif %}
   </title>
   <meta http-equip="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  {% if page.summary %}
-    <meta name="description" content="{{ page.summary | escape }}- {% if {page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}">
-  {% endif %}
-   <meta name="keywords" content="{% if page.title %}{{ page.title }}, {{ site.title }}, {% for categ in page.categories %}{{ categ }}{% if forloop.last == false %}, {% endif %}{% endfor %}{% else %}{{ site.title }}, {% for category in site.categories %}{% capture categories_slug %}{{ category | first }}{% endcapture %}{% for categ in categories_slug %}{{ categ }}{% endfor %}{% if forloop.last == false %}, {% endif %}{% endfor %}{% endif %},{{ page.keywords | escape }}"/>
 
-  <link
-    rel="alternate"
-    type="application/rss+xml"
-    title="RSS"
-    href="/feed.xml"
-  />
+  {% if page.summary %}
+    <meta name="description" content="{{ page.summary | escape }} - {% if page.title %}{{ page.title }}{% else %}{{ site.description }}{% endif %}">
+  {% endif %}
+
+ <meta name="keywords" content="Security Engineering, Security operations, Malware Analysis, Threat Intelligence, Incident Response, Network security, Information security, Penetration testing, Digital forensics, Endpoint protection, Intrusion detection">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
   <meta content="{{ site.share.fb_appid }}" property="fb:app_id" />
   <meta content="{{ site.title }}" property="og:site_name" />
+
   {% if page.noindex %}
-  <meta name="robots" content="noindex" />
-  {% endif %} {% if page.title %}
-  <meta content="{{ page.title }}" property="og:title" />
-  <meta content="article" property="og:type" />
+    <meta name="robots" content="noindex" />
+  {% endif %}
+
+  {% if page.title %}
+    <meta content="{{ page.title }}" property="og:title" />
+    <meta content="article" property="og:type" />
   {% else %}
-  <meta content="{{ site.title }}" property="og:title" />
-  <meta content="website" property="og:type" />
-  {% endif %} {% if page.summary %}
-  <meta content="{{ page.summary }}" property="og:description" />
+    <meta content="{{ site.title }}" property="og:title" />
+    <meta content="website" property="og:type" />
+  {% endif %}
+
+  {% if page.summary %}
+    <meta content="{{ page.summary }}" property="og:description" />
   {% else %}
-  <meta content="{{ site.description }}" property="og:description" />
-  {% endif %} {% if page.url %}
-  <meta content="{{ site.url }}{{ page.url }}" property="og:url" />
-  {% endif %} {% if page.date %}
-  <meta
-    content="{{ page.date | date_to_xmlschema }}"
-    property="article:published_time"
-  />
-  <meta content="{{ site.url }}/about/" property="article:author" />
-  {% endif %} {% if page.thumbnail %}
-  <meta content="{{ site.url }}{{ page.thumbnail }}" property="og:image" />
-  {% endif %} {% if page.categories %} {% for category in page.categories
-  limit:1 %}
-  <meta content="{{ category }}" property="article:section" />
-  {% endfor %} {% endif %} {% if page.tags %} {% for tag in page.tags %}
-  <meta content="{{ tag }}" property="article:tag" />
-  {% endfor %} {% endif %}
+    <meta content="{{ site.description }}" property="og:description" />
+  {% endif %}
+
+  {% if page.url %}
+    <meta content="{{ site.url }}{{ page.url }}" property="og:url" />
+  {% endif %}
+
+  {% if page.date %}
+    <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time" />
+    <meta content="{{ site.url }}/about/" property="article:author" />
+  {% endif %}
+
+  {% if page.thumbnail %}
+    <meta content="{{ site.url }}{{ page.thumbnail }}" property="og:image" />
+  {% endif %}
+
+  {% if page.categories %} 
+    {% for category in page.categories limit:1 %}
+      <meta content="{{ category }}" property="article:section" />
+    {% endfor %}
+  {% endif %}
+
+  {% if page.tags %} 
+    {% for tag in page.tags %}
+      <meta content="{{ tag }}" property="article:tag" />
+    {% endfor %}
+  {% endif %}
+
 
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary" />
