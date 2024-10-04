@@ -101,7 +101,7 @@ analytics:
 # Site Author
 author:
   name             : "Daniel Jeremiah"
-  avatar           : "/assets/daniyyell.jpeg" # Replace with actual avatar path
+  avatar           : #"/assets/daniyyell.jpeg" # Replace with actual avatar path
   bio              : "Daniel is a Senior Security Operations Analyst specialising in malware analysis, reverse engineering, Digital Forensics and Incident Response (DFIR), and Adversarial Machine Learning (AML)."
   location         : "London Area, United Kingdom"
   email            : #"info@daniyyell.com"
