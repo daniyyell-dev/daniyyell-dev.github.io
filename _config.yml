@@ -109,9 +109,9 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:info@daniyyell.com" # Replace with your actual email
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://daniyyell.com"
+    #- label: "Website"
+      #icon: "fas fa-fw fa-link"
+      #url: "https://daniyyell.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/dani_yyell"
