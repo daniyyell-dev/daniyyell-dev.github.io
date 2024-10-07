@@ -1,7 +1,7 @@
 # main links
-main:
-  - title: "Home"
-    url: https://daniyyell.com
+#main:
+  #- title: "Home"
+   # url: https://daniyyell.com
   # - title: "About"
   #   url: https://daniyyell.com
   # - title: "Recent Posts"
@@ -10,3 +10,16 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+  
+# Main links
+main:
+  - title: "Malware Analysis"
+    url: /categories/#malware-analysis
+  - title: "Threat Hunting"
+    url: /categories/#threat-hunting
+  - title: "Machine Learning"
+    url: /categories/#machine-learning
+  - title: "Tools"
+    url: /categories/#tools
+  - title: "All Categories"
+    url: /categories
