@@ -1,4 +1,0 @@
-2768,6528,daniyyell_pro_inj_POC.exe,WINDOWS-MALWARE\Windows_10x64,C:\Users\Windows_10x64\Downloads\daniyyell_pro_inj_POC.exe,"""C:\Users\Windows_10x64\Downloads\daniyyell_pro_inj_POC.exe"" ",2024-10-08T08:02:00.3085034Z,0001-01-01T00:00:00Z,explorer.exe -> daniyyell_pro_inj_POC.exe,
-
-
-9056,2768,conhost.exe,WINDOWS-MALWARE\Windows_10x64,C:\Windows\System32\conhost.exe,\??\C:\Windows\system32\conhost.exe 0x4,2024-10-08T08:02:00.3157511Z,0001-01-01T00:00:00Z,explorer.exe -> daniyyell_pro_inj_POC.exe -> conhost.exe,
