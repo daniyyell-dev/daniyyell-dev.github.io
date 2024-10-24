@@ -406,7 +406,11 @@ The events indicate that the victim's system interacted with potentially malicio
 
 ### Step 3: Analysing the HTTP Response Body
 
-When we examine the `http_response_body`, we observe a Base64 payload that was retrieved by the victim. The good news is that the SELKS platform automatically decoded this payload, providing us with valuable insights into its contents.
+When we examine the `http_response_body`, we observe a Base64 payload that was retrieved by the victim. The good news is that the SELKS platform automatically decoded this payload, providing us with valuable insights into its contents as shown in Fig 16.
+
+![Base64 Text](/assets/images/Selks/text_base64.png)
+
+*Fig 16. Base64 Payload*
 
 #### HTTP Response Details:
 - **Response Status**: HTTP/1.1 200 OK
@@ -443,8 +447,13 @@ Given that this payload is not carrying a binary executable file but rather exec
 
 ### Next Steps
 
-Since the investigation confirms that the `XLM.txt` file contains malicious PowerShell code, we will now proceed to analyse the second file, `MDM.jpg`, which was also downloaded by the victim.
+Since the investigation confirms that the `XLM.txt` file contains malicious PowerShell code as shown in Fig 17, we will now proceed to analyse the second file, `MDM.jpg`, which was also downloaded by the victim.
 
+
+![Text File](/assets/images/Selks/text_file.png)
+
+
+*Fig 17. The text file > powershell*
 
 ### Analysis of the MDM.jpg File
 
@@ -458,8 +467,11 @@ The investigation continues with the analysis of the second file, `MDM.jpg`, whi
   - **Destination IP**: 10.1.9.101
   - **Detection Alert**: ET MALWARE ASYNC RAT Payload Inbound
 
-Upon further examination, it becomes clear that the initial JPEG file is not a genuine image but rather contains plain text encoded in base64 format. When decoded within the SELKS platform, this base64 content converts into a lengthy hexadecimal string represented by a function named `$hexString_bbb and $hexString_pe`, which we suspect contains the main payload.
+Upon further examination, it becomes clear that the initial JPEG file is not a genuine image but rather contains plain text encoded in base64 format. When decoded within the SELKS platform, this base64 content converts into a lengthy hexadecimal string represented by a function named `$hexString_bbb and $hexString_pe`, which we suspect contains the main payload as shown in Fig 18.
 
+![Hex Payload](/assets/images/Selks/hex_payload.png)
+
+*Fig 18: Hex Payloads*
 
 The content inside the malicious __MDM.jpg__ downloaded by the victim through the the attacker IP, appears as follows:
 
@@ -707,12 +719,12 @@ else:
 
 ```
 
-Upon decoding the contents of the `MDM.jpg` file, we initially expected a PowerShell script, but the result, as seen in Figure 25, indicated otherwise; the decoded string contained __"Ms@ !L!This program cannot be run in DOS mode__," a clear sign that the data was actually a binary file (executable) as shown in Fig 16, which means our next step will involve converting it back to its original binary form for further analysis. 
+Upon decoding the contents of the `MDM.jpg` file, we initially expected a PowerShell script, but the result, as seen in Figure 25, indicated otherwise; the decoded string contained __"Ms@ !L!This program cannot be run in DOS mode__," a clear sign that the data was actually a binary file (executable) as shown in Fig 19, which means our next step will involve converting it back to its original binary form for further analysis. 
 
 
-![Fig 16: AsyncRat Executable](/assets/images/Selks/binary_execu.png)
+![Fig 19: AsyncRat Executable](/assets/images/Selks/binary_execu.png)
 
-*Fig 16: AsyncRat Executable*
+*Fig 19: AsyncRat Executable*
 
 
 ##### Code
@@ -755,12 +767,12 @@ else:
 
 ```
 
-We uploaded the extracted `decoded_file.exe` to VirusTotal, where it had a detection rate of **57 out of 74** as shown in Fig 17. The first scan was recorded on **2023-10-30 at 15:08:44 UTC**. You can view the detailed analysis on VirusTotal through the following link: [VirusTotal Analysis](https://www.virustotal.com/gui/file/1eb7b02e18f67420f42b1d94e74f3b6289d92672a0fb1786c30c03d68e81d798).
+We uploaded the extracted `decoded_file.exe` to VirusTotal, where it had a detection rate of **57 out of 74** as shown in Fig 20. The first scan was recorded on **2023-10-30 at 15:08:44 UTC**. You can view the detailed analysis on VirusTotal through the following link: [VirusTotal Analysis](https://www.virustotal.com/gui/file/1eb7b02e18f67420f42b1d94e74f3b6289d92672a0fb1786c30c03d68e81d798).
 
 
-![Fig 17: VirusTotal Scan](/assets/images/Selks/Async_VirusTotal.png)
+![Fig 20: VirusTotal Scan](/assets/images/Selks/Async_VirusTotal.png)
 
-*Fig 17: VirusTotal Scan*
+*Fig 20: VirusTotal Scan*
 
 
 In this blog, we will not be performing a detailed code or static analysis of this malicious file, as it requires more in-depth examination. We plan to cover these aspects in a future post.
@@ -770,11 +782,11 @@ For dynamic analysis, you can explore the following resources:
 - [Hybrid Analysis](https://www.hybrid-analysis.com/sample/1eb7b02e18f67420f42b1d94e74f3b6289d92672a0fb1786c30c03d68e81d798/67180b1aaff61a299c0507cc) of the same file.
 
 
-Additionally, SELKS detected a malicious SSL certificate associated with the AsyncRAT server. As shown in Figure 18, the decoded base64 payload displayed patterns consistent with "MALWARE Observed Malicious SSL Cert (AsyncRAT Server)" and included the text fragment __"Q..e.....J..wRa........m.g....Se%n. ....<7M....u?5..:_F.oI!:k.N.A!\\.........................0...0.............C.....x!./9..0\r..*.H..\r..\r..0.1.0...U....AsyncRAT Server0"__. This highlights how SELKS played a crucial role in refining our analysis and bringing us closer to a conclusive verdict.
+Additionally, SELKS detected a malicious SSL certificate associated with the AsyncRAT server. As shown in Figure 21, the decoded base64 payload displayed patterns consistent with "MALWARE Observed Malicious SSL Cert (AsyncRAT Server)" and included the text fragment __"Q..e.....J..wRa........m.g....Se%n. ....<7M....u?5..:_F.oI!:k.N.A!\\.........................0...0.............C.....x!./9..0\r..*.H..\r..\r..0.1.0...U....AsyncRAT Server0"__. This highlights how SELKS played a crucial role in refining our analysis and bringing us closer to a conclusive verdict.
 
-![Fig 18: VirusTotal Scan](/assets/images/Selks/Async_VirusTotal.png)
+![Fig 21: VirusTotal Scan](/assets/images/Selks/Async_VirusTotal.png)
 
-*Fig 18: VirusTotal Scan*
+*Fig 21: VirusTotal Scan*
 
 ## Conclusion
 
@@ -802,6 +814,16 @@ Here are the indicators of compromise (IOC) related to the observed malicious ac
 
 - **File Hash:**
   - `88e8cee71f454bc1fa6b3a7741a3bd7d`
+
+## Conclusion
+
+Analysing PCAP files remains a vital skill in the line of defence against cyber threats. Over the years, tools like Wireshark have made this process more accessible, but modern threats require more advanced platforms for comprehensive analysis. In this blog, we explored how SELKS, a free open-source platform, can be used to analyse a PCAP file and identify both the victim and the attacker.
+
+Using SELKS, we successfully correlated the attack with Suricata rules and tracked the embedded payloads within the HTTP requests, ultimately tracing the malicious files back to AsyncRAT. The downloaded files, such as `/mdm.jpg` and `/xlm.txt`, were revealed as part of the attacker’s toolkit to execute remote commands and deliver the RAT. By extracting the Indicators of Compromise (IOCs), we were able to better understand the scope of the attack and its potential impact.
+
+This case study also underscored the importance of platforms like SELKS in real-time network monitoring and threat detection. Advanced capabilities such as integrating Suricata alerts, tracking malicious SSL certificates, and correlating activities with MITRE ATT&CK techniques (such as Command and Control and Dynamic Resolution) greatly enhance the effectiveness of threat hunting and incident response.
+
+Ultimately, this analysis highlights how crucial it is to adopt tools that go beyond traditional network analysis, enabling defenders to respond swiftly and effectively to evolving cyber threats.
 
 ### References
 
