@@ -788,15 +788,6 @@ Additionally, SELKS detected a malicious SSL certificate associated with the Asy
 
 *Fig 21: VirusTotal Scan*
 
-## Conclusion
-
-In summary, the comprehensive investigation into the incident, aided by the SELKS platform, has provided invaluable insights into the malicious activities associated with the downloaded files. By utilising SELKS for traffic analysis and correlation, we were able to trace the origin of the attacks, decode suspicious payloads, and identify the potential use of malware such as AsyncRAT. The analysis of the `XLM.txt` and `MDM.jpg` files revealed malicious PowerShell code and encoded binary data, which we later decoded.
-
-The results from VirusTotal further confirmed the malicious nature of the `decoded_file.exe` file, highlighting the significance of collaborative threat intelligence platforms in understanding and mitigating cyber risks. Additionally, the detection of a malicious SSL certificate confirmed that it was indeed AsyncRAT. 
-
-Through this investigation, we demonstrated the efficacy of combining network analysis tools like SELKS with file analysis platforms to uncover hidden malware threats. The discovery of obfuscated malware within seemingly benign files underscores the importance of thorough analysis in identifying sophisticated threats. Our findings highlight the need for ongoing vigilance and the implementation of robust detection measures to combat evolving malware techniques. 
-
-
 ### Indicators of Compromise (IOC)
 
 Here are the indicators of compromise (IOC) related to the observed malicious activity:
@@ -823,7 +814,7 @@ Using SELKS, we successfully correlated the attack with Suricata rules and track
 
 This case study also underscored the importance of platforms like SELKS in real-time network monitoring and threat detection. Advanced capabilities such as integrating Suricata alerts, tracking malicious SSL certificates, and correlating activities with MITRE ATT&CK techniques (such as Command and Control and Dynamic Resolution) greatly enhance the effectiveness of threat hunting and incident response.
 
-Ultimately, this analysis highlights how crucial it is to adopt tools that go beyond traditional network analysis, enabling defenders to respond swiftly and effectively to evolving cyber threats.
+Ultimately, this analysis highlights how crucial it is to adopt tools that go beyond manual network analysis, enabling defenders to respond swiftly and effectively to evolving cyber threats.
 
 ### References
 
