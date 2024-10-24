@@ -818,28 +818,28 @@ Ultimately, this analysis highlights how crucial it is to adopt tools that go be
 
 ## References
 
-[1] P. Kumar N, “AsyncRAT C2 Framework: Overview, Technical Analysis & Detection,” *Qualys Security Blog*, Aug. 16, 2022. Available: https://blog.qualys.com/vulnerabilities-threat-research/2022/08/16/asyncrat-c2-framework-overview-technical-analysis-and-detection. [Accessed: Oct. 22, 2024].
+[1] P. Kumar N, “AsyncRAT C2 Framework: Overview, Technical Analysis & Detection,” *Qualys Security Blog*, Aug. 16, 2022. Available: [https://blog.qualys.com/vulnerabilities-threat-research/2022/08/16/asyncrat-c2-framework-overview-technical-analysis-and-detection](https://blog.qualys.com/vulnerabilities-threat-research/2022/08/16/asyncrat-c2-framework-overview-technical-analysis-and-detection). [Accessed: Oct. 22, 2024].
 
-[2] N. CAT, “AsyncRAT,” *GitHub*, Nov. 21, 2022. Available: https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp. [Accessed: Oct. 22, 2024].
+[2] N. CAT, “AsyncRAT,” *GitHub*, Nov. 21, 2022. Available: [https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp](https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp). [Accessed: Oct. 22, 2024].
 
-[3] J. Petters, “How to Use Wireshark: Comprehensive Tutorial + Tips,” *Varonis*, Aug. 29, 2019. Available: https://www.varonis.com/blog/how-to-use-wireshark. [Accessed: Oct. 22, 2024].
+[3] J. Petters, “How to Use Wireshark: Comprehensive Tutorial + Tips,” *Varonis*, Aug. 29, 2019. Available: [https://www.varonis.com/blog/how-to-use-wireshark](https://www.varonis.com/blog/how-to-use-wireshark). [Accessed: Oct. 22, 2024].
 
-[4] M. Labs, “Unmasking AsyncRAT New Infection Chain,” *McAfee Blog*, Nov. 3, 2023. Available: https://www.mcafee.com/blogs/other-blogs/mcafee-labs/unmasking-asyncrat-new-infection-chain/. [Accessed: Oct. 22, 2024].
+[4] M. Labs, “Unmasking AsyncRAT New Infection Chain,” *McAfee Blog*, Nov. 3, 2023. Available: [https://www.mcafee.com/blogs/other-blogs/mcafee-labs/unmasking-asyncrat-new-infection-chain](https://www.mcafee.com/blogs/other-blogs/mcafee-labs/unmasking-asyncrat-new-infection-chain). [Accessed: Oct. 22, 2024].
 
-[5] B. Tancio, F. Cureg, and M. E. Viray, “Analyzing AsyncRAT’s Code Injection into Aspnet_Compiler.exe across Multiple Incident Response Cases,” *Trend Micro*, Dec. 11, 2023. Available: https://www.trendmicro.com/en_gb/research/23/l/analyzing-asyncrat-code-injection-into-aspnetcompiler-exe.html. [Accessed: Oct. 22, 2024].
+[5] B. Tancio, F. Cureg, and M. E. Viray, “Analyzing AsyncRAT’s Code Injection into Aspnet_Compiler.exe across Multiple Incident Response Cases,” *Trend Micro*, Dec. 11, 2023. Available: [https://www.trendmicro.com/en_gb/research/23/l/analyzing-asyncrat-code-injection-into-aspnetcompiler-exe.html](https://www.trendmicro.com/en_gb/research/23/l/analyzing-asyncrat-code-injection-into-aspnetcompiler-exe.html). [Accessed: Oct. 22, 2024].
 
-[6] F. Martinez, “AsyncRAT loader: Obfuscation, DGAs, decoys and Govno,” *AT&T Cybersecurity*, May 21, 2024. Available: https://cybersecurity.att.com/blogs/labs-research/asyncrat-loader-obfuscation-dgas-decoys-and-govno. [Accessed: Oct. 22, 2024].
+[6] F. Martinez, “AsyncRAT loader: Obfuscation, DGAs, decoys and Govno,” *AT&T Cybersecurity*, May 21, 2024. Available: [https://cybersecurity.att.com/blogs/labs-research/asyncrat-loader-obfuscation-dgas-decoys-and-govno](https://cybersecurity.att.com/blogs/labs-research/asyncrat-loader-obfuscation-dgas-decoys-and-govno). [Accessed: Oct. 22, 2024].
 
-[7] Splunk Threat Research Team, “AsyncRAT Crusade - Detections and Defense,” *Splunk*, Mar. 27, 2023. Available: https://www.splunk.com/en_us/blog/security/asyncrat-crusade-detections-and-defense.html. [Accessed: Oct. 22, 2024].
+[7] Splunk Threat Research Team, “AsyncRAT Crusade - Detections and Defense,” *Splunk*, Mar. 27, 2023. Available: [https://www.splunk.com/en_us/blog/security/asyncrat-crusade-detections-and-defense.html](https://www.splunk.com/en_us/blog/security/asyncrat-crusade-detections-and-defense.html). [Accessed: Oct. 22, 2024].
 
-[8] VirusTotal Analysis Overview 1. Available: https://www.virustotal.com/gui/file/1eb7b02e18f67420f42b1d94e74f3b6289d92672a0fb1786c30c03d68e81d798/details. [Accessed: Oct. 22, 2024].
+[8] VirusTotal Analysis Overview 1. Available: [https://www.virustotal.com/gui/file/1eb7b02e18f67420f42b1d94e74f3b6289d92672a0fb1786c30c03d68e81d798/details](https://www.virustotal.com/gui/file/1eb7b02e18f67420f42b1d94e74f3b6289d92672a0fb1786c30c03d68e81d798/details). [Accessed: Oct. 22, 2024].
 
-[9] VirusTotal Analysis Overview 2. Available: https://www.virustotal.com/gui/file/39ce0b953f3831429fa1c971ad0da741877ad2c932406e43f64874e65f82a238/details. [Accessed: Oct. 22, 2024].
+[9] VirusTotal Analysis Overview 2. Available: [https://www.virustotal.com/gui/file/39ce0b953f3831429fa1c971ad0da741877ad2c932406e43f64874e65f82a238/details](https://www.virustotal.com/gui/file/39ce0b953f3831429fa1c971ad0da741877ad2c932406e43f64874e65f82a238/details). [Accessed: Oct. 22, 2024].
 
-[10] “Malware Traffic Analysis,” *Malware Traffic Analysis*, Jan. 9, 2024. Available: https://malware-traffic-analysis.net/2024/01/09/index.html. [Accessed: Oct. 22, 2024].
+[10] “Malware Traffic Analysis,” *Malware Traffic Analysis*, Jan. 9, 2024. Available: [https://malware-traffic-analysis.net/2024/01/09/index.html](https://malware-traffic-analysis.net/2024/01/09/index.html). [Accessed: Oct. 22, 2024].
 
-[11] AnyRun Analysis Overview. Available: https://app.any.run/tasks/c226c343-8b98-4714-b3ea-47547a3a8b0c. [Accessed: Oct. 22, 2024].
+[11] AnyRun Analysis Overview. Available: [https://app.any.run/tasks/c226c343-8b98-4714-b3ea-47547a3a8b0c](https://app.any.run/tasks/c226c343-8b98-4714-b3ea-47547a3a8b0c). [Accessed: Oct. 22, 2024].
 
-[12] Hybrid Analysis Overview. Available: https://www.hybrid-analysis.com/sample/1eb7b02e18f67420f42b1d94e74f3b6289d92672a0fb1786c30c03d68e81d798. [Accessed: Oct. 22, 2024].
+[12] Hybrid Analysis Overview. Available: [https://www.hybrid-analysis.com/sample/1eb7b02e18f67420f42b1d94e74f3b6289d92672a0fb1786c30c03d68e81d798](https://www.hybrid-analysis.com/sample/1eb7b02e18f67420f42b1d94e74f3b6289d92672a0fb1786c30c03d68e81d798). [Accessed: Oct. 22, 2024].
 
-[[13]](https://www.youtube.com/watch?v=s621gAaURA0&t=3261s) “Network Security Monitoring and Threat Hunting Dr Josh w/ Peter Manev,” YouTube. [Accessed: Oct. 22, 2024].
+[13] “Network Security Monitoring and Threat Hunting Dr Josh w/ Peter Manev,” YouTube. Available: [https://www.youtube.com/watch?v=s621gAaURA0&t=3261s](https://www.youtube.com/watch?v=s621gAaURA0&t=3261s). [Accessed: Oct. 22, 2024].
