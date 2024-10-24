@@ -2,7 +2,7 @@
 title: "Analysing PCAP Files in a Modern Way: Investigating AsyncRAT Infection Traffic with SELKS"
 classes: wide
 header:
-  teaser: /assets/images/velo/velo.png
+  teaser: /assets/images/Selks/rat.png
 ribbon: DodgerBlue
 description: "An in-depth analysis of network traffic using SELKS to investigate AsyncRAT infection patterns, offering modern techniques for threat hunters and malware analysts."
 categories:
@@ -10,7 +10,7 @@ categories:
   - Tools
   - Malware Analysis
 toc: true
-date: 2024-10-08
+date: 2024-10-24
 ---
 
 # Introduction
