@@ -12,12 +12,12 @@ categories:
 toc: true
 date: 2024-10-08
 ---
-SELKS is a free and open source Debian-based IDS/IPS/Network Security Monitoring platform released under GPLv3 from Stamus Networks
+
 # Introduction
 
 In today's cybersecurity landscape, the ability to analyse PCAP (Packet Capture) files is a critical skill for threat hunters, malware analysts and other proffesionals. The increasing sophistication of malware, such as AsyncRAT, demands advanced tools and techniques for effective network traffic analysis. For many years, professionals and experts have relied on Wireshark [[3]](https://www.varonis.com/blog/how-to-use-wireshark), a widely used tool for these tasks. However, the cybersecurity field often embraces any approach that proves effective. 
 
-his blog explores how to use SELKS, an open-source, Debian-based IDS/IPS/Network Security Monitoring platform released under GPLv3 by Stamus Networks, to investigate AsyncRAT infection traffic in PCAP file. SELKS leverages the power of Suricata, Elasticsearch, Logstash, Kibana, Evebox and Scirius, offering a comprehensive environment to visualise, detect, and analyse malicious activities in network traffic. In this post, we will guide you through setting up SELKS, analyzing network traffic data, and identifying indicators of AsyncRAT infections.
+This blog explores how to use SELKS, an open-source, Debian-based IDS/IPS/Network Security Monitoring platform released under GPLv3 by Stamus Networks, to investigate AsyncRAT infection traffic in PCAP file. SELKS leverages the power of Suricata, Elasticsearch, Logstash, Kibana, Evebox and Scirius, offering a comprehensive environment to visualise, detect, and analyse malicious activities in network traffic. In this post, we will guide you through setting up SELKS, analyzing network traffic data, and identifying indicators of AsyncRAT infections.
 
 
 ## AsyncRAT Overview
@@ -684,8 +684,6 @@ else:
     print("No valid hexadecimal string found in the script.")
 
 ```
-
-
 
 Upon decoding the contents of the `MDM.jpg` file, we initially expected a PowerShell script, but the result, as seen in Figure 25, indicated otherwise; the decoded string contained __"Ms@ !L!This program cannot be run in DOS mode__," a clear sign that the data was actually a binary file (executable) as shown in Fig 16, which means our next step will involve converting it back to its original binary form for further analysis. 
 
