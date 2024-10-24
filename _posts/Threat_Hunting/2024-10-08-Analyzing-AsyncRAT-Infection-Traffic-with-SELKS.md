@@ -91,7 +91,7 @@ Before diving into the analysis, ensure you have the following:
 
 
 
-#### Installation and Configuration
+### Installation and Configuration
 
 SELKS can be installed on any Linux operating system or Windows using Docker. Additionally, there is an ISO available for SELKS; however, this ISO does not come pre-installed with SELKS. The author has been using the Linux version of this ISO, which appears to be effective, but it can be utilised in any Linux environment. In this section, the steps to install the Docker version of SELKS will be outlined.
 
@@ -816,7 +816,7 @@ This case study also underscored the importance of platforms like SELKS in real-
 
 Ultimately, this analysis highlights how crucial it is to adopt tools that go beyond manual network analysis, enabling defenders to respond swiftly and effectively to evolving cyber threats.
 
-### References
+## References
 
 [1] P. Kumar N, “AsyncRAT C2 Framework: Overview, Technical Analysis & Detection,” *Qualys Security Blog*, Aug. 16, 2022. Available: https://blog.qualys.com/vulnerabilities-threat-research/2022/08/16/asyncrat-c2-framework-overview-technical-analysis-and-detection. [Accessed: Oct. 22, 2024].
 
