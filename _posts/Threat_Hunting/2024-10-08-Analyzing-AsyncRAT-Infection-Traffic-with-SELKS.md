@@ -15,7 +15,7 @@ date: 2024-10-24
 
 # Introduction
 
-In today's cybersecurity landscape, the ability to analyse PCAP (Packet Capture) files is a critical skill for threat hunters, malware analysts and other proffesionals. The increasing sophistication of malware, such as AsyncRAT, demands advanced tools and techniques for effective network traffic analysis. For many years, professionals and experts have relied on Wireshark [[3]](https://www.varonis.com/blog/how-to-use-wireshark), a widely used tool for these tasks. However, the cybersecurity field often embraces any approach that proves effective. 
+In today's cybersecurity landscape, the ability to analyse PCAP (Packet Capture) files is a critical skill for threat hunters, malware analysts and other profesionals. The increasing sophistication of malware, such as AsyncRAT, demands advanced tools and techniques for effective network traffic analysis. For many years, professionals and experts have relied on Wireshark [[3]](https://www.varonis.com/blog/how-to-use-wireshark), a widely used tool for these tasks. However, the cybersecurity field often embraces any approach that proves effective. 
 
 This blog explores how to use SELKS, an open-source, Debian-based IDS/IPS/Network Security Monitoring platform released under GPLv3 by Stamus Networks, to investigate AsyncRAT infection traffic in PCAP file. SELKS leverages the power of Suricata, Elasticsearch, Logstash, Kibana, Evebox and Scirius, offering a comprehensive environment to visualise, detect, and analyse malicious activities in network traffic. In this post, we will guide you through setting up SELKS, analyzing network traffic data, and identifying indicators of AsyncRAT infections.
 
