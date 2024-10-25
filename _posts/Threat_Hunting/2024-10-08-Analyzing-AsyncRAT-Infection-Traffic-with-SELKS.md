@@ -115,7 +115,7 @@ docker-compose up -d
 
 ### Accessing SELKS
 
-Once the containers are up and running, users should point their browser to `https://your.selks.IP.here/`. If Portainer was installed during the setup process, users must visit `https://your.selks.IP.here:9443` to set Portainer's admin password.
+Once the containers are up and running, users should point their browser to `https://your.selks.IP.here/`. If Portainer was installed during the setup process, users must visit `https://your.selks.IP.here:9443` to set Portainer's admin password if you select portainer's during setup to main your docker.
 
 If the setup script fails and users believe it may be a bug, they are encouraged to [report an issue](https://github.com/StamusNetworks/SELKS/issues). Additionally, a manual setup process is available for reference.
 
