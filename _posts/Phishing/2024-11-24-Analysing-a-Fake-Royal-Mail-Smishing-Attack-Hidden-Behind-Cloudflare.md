@@ -2,7 +2,7 @@
 title: "Analysing a Fake Royal Mail Smishing Attack Hidden Behind Cloudflare"
 classes: wide
 header:
-  teaser: /assets/images/Selks/rat.png
+  teaser: /assets/images/Royal-Mail/royal.jpeg
 ribbon: DodgerBlue
 description: "Exploring a fake Royal Mail smishing attack that uses deceptive SMS and a phishing site hidden behind Cloudflare to steal sensitive information."
 categories:
@@ -19,7 +19,6 @@ date: 2024-11-24
 
 On 23/11/2024, I received an SMS claiming to be from Royal Mail:  
 *“Royal Mail: You have an update for your parcel delivery, check at Royalmail[dot]delivery-service[dot]info.”*
-
 
 After visiting the website, the user realised it was a phishing attempt designed to harvest personal information. The site requested a small token fee for parcel clearance, which raised suspicion, as Royal Mail would never ask for such a fee. While the request seemed odd, it became more convincing for those who were expecting a delivery from Royal Mail. In such situations, if not paying close attention, it would be easy to fall victim to the scam.
 
