@@ -22,7 +22,7 @@ On 23/11/2024, I received an SMS claiming to be from Royal Mail:
 
 After visiting the website, the user realised it was a phishing attempt designed to harvest personal information. The site requested a small token fee for parcel clearance, which raised suspicion, as Royal Mail would never ask for such a fee. While the request seemed odd, it became more convincing for those who were expecting a delivery from Royal Mail. In such situations, if not paying close attention, it would be easy to fall victim to the scam.
 
-![Figure 1](/assets/images/Royal-Mail/SMS-smishing.png)  
+![Figure 1](/assets/images/Royal-Mail/SMS-smishing.jpeg)  
 *Fig 1: Example of a typical smishing SMS targeting victims.*
 
 The attack begins with a seemingly innocuous SMS, followed by a phishing website that mimics the official Royal Mail service. The site is hidden behind Cloudflare, likely to obscure its true origin and make it harder to trace the attackers.
@@ -42,7 +42,7 @@ The attacker also gathers users postcode as shown in Fig 3.
 
 When the user clicks the link in the SMS, they are directed to a page asking for confirmation of their address details.
 
-![Figure 4](/assets/images/Royal-Mail/personal-infor...ion-havesting.png)  
+![Figure 4](/assets/images/Royal-Mail/personal-information-havesting.png)  
 *Fig 4: Personal information harvesting on a phishing form.*
 
 
@@ -111,7 +111,7 @@ By checking the domain on [Name.com](https://www.name.com), we discovered that t
 
 To gather evidence, We created a fake disposable credit card and proceeded to fill in all the required information on the phishing site, following the attacker’s process exactly. After about ten minutes, We noticed the attacker attempted to use the card via Apple Pay. However, the transaction failed because the card was a disposable one and had already been frozen.
 
-![Figure 11](/assets/images/Royal-Mail/apple-pay.png)  
+![Figure 11](/assets/images/Royal-Mail/apple-pay.jpeg)  
 *Fig 11: Apple Pay phishing attempt used in smishing campaigns.*
 
 
