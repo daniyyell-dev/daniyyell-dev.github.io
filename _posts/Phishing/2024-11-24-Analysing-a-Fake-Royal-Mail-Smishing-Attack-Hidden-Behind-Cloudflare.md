@@ -17,8 +17,8 @@ date: 2024-11-24
 
 ### **Introduction**
 
-On 23/11/2024, I received an SMS claiming to be from Royal Mail:  
-*“Royal Mail: You have an update for your parcel delivery, check at Royalmail[dot]delivery-service[dot]info.”*
+On 23/11/2024, a user received an SMS claiming to be from Royal Mail:  
+*“Royal Mail: You have an update for your parcel delivery, check at Royalmail[dot]delivery-service[dot]info.”* As shown in Fig 1.
 
 After visiting the website, the user realised it was a phishing attempt designed to harvest personal information. The site requested a small token fee for parcel clearance, which raised suspicion, as Royal Mail would never ask for such a fee. While the request seemed odd, it became more convincing for those who were expecting a delivery from Royal Mail. In such situations, if not paying close attention, it would be easy to fall victim to the scam.
 
@@ -26,8 +26,7 @@ After visiting the website, the user realised it was a phishing attempt designed
 *Fig 1: Example of a typical smishing SMS targeting victims.*
 
 
-
-The attack begins with a seemingly innocuous SMS, followed by a phishing website that mimics the official Royal Mail service. The site is hidden behind Cloudflare, likely to obscure its true origin and make it harder to trace the attackers.
+The attack begins with a seemingly innocuous SMS, followed by a phishing website that mimics the official Royal Mail service. The site is hidden behind Cloudflare as shown in Fig 2, likely to obscure its true origin and make it harder to trace the attackers or for security enhancement.
 
 ![Figure 2](/assets/images/Royal-Mail/URL-redirect-to-cloudflare.png)  
 *Fig 2: URL redirection to Cloudflare used by attackers to bypass detection.*
@@ -42,7 +41,7 @@ The attacker also gathers users postcode as shown in Fig 3.
 
 #### **Stage 1: Harvesting PII**
 
-When the user clicks the link in the SMS, they are directed to a page asking for confirmation of their address details.
+Through the link, the user is prompted to enter their postcode. In the next stage, they are directed to a page requesting confirmation of their address details—something Royal Mail would not typically ask for, as it is not standard practice.
 
 ![Figure 4](/assets/images/Royal-Mail/personal-information-havesting.png)  
 *Fig 4: Personal information harvesting on a phishing form.*
@@ -55,7 +54,7 @@ This form requests the following personal information:
 - **Date of Birth**
 - **Home Address**
 
-At this stage, the attackers collect valuable personally identifiable information (PII), which could be used for identity theft or further targeted attacks.
+At this stage, the attackers collect valuable personally identifiable information (PII) as shown in Fig 4, which could be used for identity theft or further targeted attacks.
 
 #### **Stage 2: Harvesting Credit Card Information**
 
@@ -64,7 +63,7 @@ After entering personal details, the victim is shown a page claiming a delivery 
 ![Figure 5](/assets/images/Royal-Mail/Payment-prompt.png)  
 *Fig 5: Fake payment prompt designed to steal sensitive financial data.*
 
-The page asserts that payment will only be taken upon successful delivery of the parcel, which helps make the request appear legitimate. 
+The page claims that payment will only be charged upon successful delivery of the parcel, making the request appear more legitimate, as shown in Fig. 5. The small amount requested by the attacker increases the likelihood of the victim agreeing to pay, unaware that they will suffer significant losses if the attacker gains access to their card details.
 
 ![Figure 6](/assets/images/Royal-Mail/CVV-card-details-havesting.png)  
 *Fig 6: Harvesting CVV and credit card details on a fake payment page.*
@@ -75,8 +74,7 @@ The page then asks for credit card details:
 - **Card Expiry Date (MM/YY)**
 - **CVV**
 
-This stage aims to steal credit card information, which can be used for fraudulent transactions or sold on the dark web.
-
+This stage is designed to steal credit card information, which can then be used for fraudulent transactions or sold on the dark web. In this case, the attacker attempted to add the victim's card to Apple Pay and make transactions. However, their efforts failed because we stayed one step ahead of them. Our goal was solely to observe and understand how this process works. Please note that the card was added 09:40PM and they try to charge the card 09:45PM.
 
 
 #### **Last Page: Final Confirmation**
