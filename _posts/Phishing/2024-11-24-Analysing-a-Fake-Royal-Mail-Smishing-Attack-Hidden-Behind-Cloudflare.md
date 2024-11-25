@@ -25,6 +25,8 @@ After visiting the website, the user realised it was a phishing attempt designed
 ![Figure 1](/assets/images/Royal-Mail/SMS-smishing.jpeg)  
 *Fig 1: Example of a typical smishing SMS targeting victims.*
 
+
+
 The attack begins with a seemingly innocuous SMS, followed by a phishing website that mimics the official Royal Mail service. The site is hidden behind Cloudflare, likely to obscure its true origin and make it harder to trace the attackers.
 
 ![Figure 2](/assets/images/Royal-Mail/URL-redirect-to-cloudflare.png)  
@@ -123,7 +125,7 @@ Normally, web hosting for such phishing sites is done with PHP, and inserting SQ
 *Fig 12: Domain take-down in progress to mitigate further attacks.*
 
 
-Within minutes of submitting the request, the website was taken down. Kudos to the NameSilo team for their quick response. The domain had been created on **2024-11-16**, and it was set to expire on **2025-11-16**. By taking this domain down within 7days of it creation, thousands of UK users were protected from falling victim to this scam, and the internet remained safer for everyone.
+As of this writing, the domain is currently down. We will continue urging the NameSilo team to act swiftly, as this is a clear and sophisticated phishing website. The domain was created on **November 16, 2024**, and is set to expire on **November 16, 2025.** By taking down this domain shortly after its creation, many UK users will be protected from falling victim to this scam, contributing to a safer internet for everyone.
 
 
 ### **Conclusion**
