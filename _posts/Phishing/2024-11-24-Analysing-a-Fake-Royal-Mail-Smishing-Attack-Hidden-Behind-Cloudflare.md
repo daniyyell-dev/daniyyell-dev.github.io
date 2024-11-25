@@ -134,6 +134,12 @@ It is critical to remain cautious when receiving unsolicited messages, particula
 
 What to do if you are a victim
 -----------------------------
-If you have already provided your personal or financial information in response to this phishing attempt, please contact:
+If you have already provided your personal or financial information in response to this phishing attempt:
+
+
+1. Disable your card or frooze it
+2. Contact your bank and explian the incident
+
+Also contact:
 
 For suspicious text messages, please send us a screenshot of the message to reportascam@royalmail.com.
