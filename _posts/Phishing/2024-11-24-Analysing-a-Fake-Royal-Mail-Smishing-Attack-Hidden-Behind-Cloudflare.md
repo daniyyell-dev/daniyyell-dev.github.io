@@ -138,7 +138,7 @@ If you have already provided your personal or financial information in response 
 
 
 1. Disable your card or frooze it
-2. Contact your bank and explian the incident
+2. Contact your bank and explain the incident
 
 Also contact:
 
