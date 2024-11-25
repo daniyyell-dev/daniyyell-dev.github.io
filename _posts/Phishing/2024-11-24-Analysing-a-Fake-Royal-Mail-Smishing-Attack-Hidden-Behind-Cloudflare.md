@@ -88,10 +88,16 @@ On the final page, the victim is presented with the following message:
 
 *“Your item will be delivered in the next 2-4 business days. It’ll only take a few seconds, we’re just verifying the details that you’ve entered. You may be redirected to your bank to confirm your details.”*
 
+
+![Figure 8](/assets/images/Royal-Mail/details-credential-sending.png)  
+*Fig 9: Credential sent to attacker.*
+
 This final step creates a sense of urgency and legitimacy, potentially redirecting the victim to their bank's verification page or simply reassuring them that the process is normal.
 
 ![Figure 8](/assets/images/Royal-Mail/final-message.png)  
-*Fig 8: Final fake message displayed to confirm successful payment.*
+*Fig 10: Final fake message displayed to confirm successful payment.*
+
+
 
 
 ### **Discovering the Hosted Domain**
@@ -99,20 +105,20 @@ This final step creates a sense of urgency and legitimacy, potentially redirecti
 Although the fake domain was hidden behind Cloudflare, it was important to trace its origin before it started using Cloudflare as a shield. 
 
 ![Figure 9](/assets/images/Royal-Mail/cloudflare.png)  
-*Fig 9: Phishing website protected by Cloudflare to evade detection.*
+*Fig 11: Phishing website protected by Cloudflare to evade detection.*
 
 
 By checking the domain on [Name.com](https://www.name.com), we discovered that the domain was actually registered with [NameSilo](http://www.namesilo.com). While most of the registry details were fake, this allowed us to contact the registrar for domain takedown. However, to take action, we needed evidence that the site was malicious.
 
 ![Figure 10](/assets/images/Royal-Mail/registrar-informations.png)  
-*Fig 10: Registrar information related to the phishing domain.*
+*Fig 12: Registrar information related to the phishing domain.*
 
 #### **Creating a Fake Disposable Credit Card**
 
 To gather evidence, We created a fake disposable credit card and proceeded to fill in all the required information on the phishing site, following the attacker’s process exactly. After about ten minutes, We noticed the attacker attempted to use the card via Apple Pay. However, the transaction failed because the card was a disposable one and had already been frozen.
 
 ![Figure 11](/assets/images/Royal-Mail/apple-pay.jpeg)  
-*Fig 11: Apple Pay phishing attempt used in smishing campaigns.*
+*Fig 13: Apple Pay phishing attempt used in smishing campaigns.*
 
 
 ### **Website Takedown**
@@ -120,7 +126,7 @@ To gather evidence, We created a fake disposable credit card and proceeded to fi
 Normally, web hosting for such phishing sites is done with PHP, and inserting SQL injections into forms could be considered illegal in its own right. Instead, the best course of action is to report the phishing website directly to the domain registrar. With the evidence at hand, We reached out to NameSilo’s support desk, who promptly provided a form for the phishing site takedown.  
 
 ![Figure 12](/assets/images/Royal-Mail/domain-take-down.png)  
-*Fig 12: Domain take-down in progress to mitigate further attacks.*
+*Fig 14: Domain take-down in progress to mitigate further attacks.*
 
 
 As of this writing, the domain is currently down. We will continue urging the NameSilo team to act swiftly, as this is a clear and sophisticated phishing website. The domain was created on **November 16, 2024**, and is set to expire on **November 16, 2025.** By taking down this domain shortly after its creation, many UK users will be protected from falling victim to this scam, contributing to a safer internet for everyone.
