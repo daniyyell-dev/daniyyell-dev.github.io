@@ -129,7 +129,7 @@ Normally, web hosting for such phishing sites is done with PHP, and inserting SQ
 *Fig 14: Domain take-down in progress to mitigate further attacks.*
 
 
-As of this writing, the domain is currently down. We will continue urging the NameSilo team to act swiftly, as this is a clear and sophisticated phishing website. The domain was created on **November 16, 2024**, and is set to expire on **November 16, 2025.** By taking down this domain shortly after its creation, many UK users will be protected from falling victim to this scam, contributing to a safer internet for everyone.
+As of this writing, the domain is currently down . We will continue urging the NameSilo team to act swiftly, as this is a clear and sophisticated phishing website. The domain was created on **November 16, 2024**, and is set to expire on **November 16, 2025.** By taking down this domain shortly after its creation, many UK users will be protected from falling victim to this scam, contributing to a safer internet for everyone.
 
 
 ### **Conclusion**
