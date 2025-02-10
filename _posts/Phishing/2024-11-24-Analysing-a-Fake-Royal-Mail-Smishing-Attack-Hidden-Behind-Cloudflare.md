@@ -123,7 +123,7 @@ To gather evidence, We created a fake disposable credit card and proceeded to fi
 
 ### **Website Takedown**
 
-Normally, web hosting for such phishing sites is done with PHP, and inserting SQL injections into forms could be considered illegal in its own right. Instead, the best course of action is to report the phishing website directly to the domain registrar. With the evidence at hand, We reached out to NameSilo’s support desk, who promptly provided a form for the phishing site takedown.  
+The best pratice is to report the phishing website directly to the domain registrar. With the evidence at hand, We reached out to NameSilo’s support desk, who promptly provided a form for the phishing site takedown.  
 
 ![Figure 12](/assets/images/Royal-Mail/domain-take-down.png)  
 *Fig 14: Domain take-down in progress to mitigate further attacks.*
