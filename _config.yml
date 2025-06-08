@@ -18,7 +18,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : true
-copyright                : " daniyyell All rights reserved"
+copyright                : "Daniel Jeremiah All rights reserved"
 copyright_url            : "https://daniyyell.com"
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
