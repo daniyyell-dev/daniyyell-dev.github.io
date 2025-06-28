@@ -1,17 +1,3 @@
-# main links
-#main:
-  #- title: "Home"
-   # url: https://daniyyell.com
-  # - title: "About"
-  #   url: https://daniyyell.com
-  # - title: "Recent Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
-  
-# Main links
 main:
   - title: "Malware Analysis"
     url: /categories/#malware-analysis
