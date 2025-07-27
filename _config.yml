@@ -6,19 +6,19 @@ locale                   : "en-UK"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Malware Analysis"
 title_separator          : "-"
-subtitle                 : "Navigating the Shadows of Cyber Threats"
+subtitle                 : "Uncovering Malware Analysis, One Byte at a Time"
 name                     : "daniyyell"
-description              : "Diving Into Malware Analysis and DFIR: Insights and Techniques from the Frontlines of Cyber Defense by Daniyyell"
+description              : "Exploring malware and DFIR through hands-on analysis, threat detection techniques, and real-world case studies."
 url                      : "https://daniyyell.com"
 baseurl                  : "/"
 repository               : "daniyyell-dev.github.io "
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/tesser.png" 
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : true
-copyright                : "Daniel Jeremiah All rights reserved"
+copyright                : "© Daniel Jeremiah. All rights reserved."
 copyright_url            : "https://daniyyell.com"
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -102,7 +102,7 @@ analytics:
 author:
   name             : "Daniel Jeremiah"
   avatar           : "/assets/images/daniyyell.jpeg" # Replace with actual avatar path
-  bio              : "Daniel is a Senior Security Operations Analyst with expertise in malware analysis, reverse engineering, DFIR, and adversarial machine learning (AML)."
+  bio              : "Daniel is a seasoned cybersecurity professional with over seven years of experience in Security Operations, Detection Engineering, Vulnerability Assessment, Penetration Testing, and Incident Response. He holds an MSc in Cybersecurity and multiple industry certifications, including CISM, CASP+, eCTHP, CRTO, CySA+, CEH and others. He is highly skilled in malware analysis, threat hunting, SOAR, adversarial simulations, and incident response. Between 2019 and 2022, Daniel actively participated in Bugcrowd and Google's bug bounty programs, submitting over 40 vulnerabilities including six submitted to Google, with a particular interest in IDOR, SSRF, and Blind XSS. As a Senior Security Operations Analyst, Daniel focuses on detecting and responding to threats in high-paced environments. He enjoys analysing and evading malware, and is currently researching adversarial machine learning (AML) within the context of offensive and defensive security."
   location         : "London Area, UK"
   email            : #"info@daniyyell.com"
   links:
