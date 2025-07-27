@@ -7,5 +7,9 @@ main:
     url: /categories/#machine-learning
   - title: "Tools"
     url: /categories/#tools
+  - title: "Datasets"
+    url: /categories/#datasets
+  - title: "Research"
+    url: /categories/#research
   - title: "All Categories"
     url: /categories

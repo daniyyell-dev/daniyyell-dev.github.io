@@ -102,7 +102,7 @@ analytics:
 author:
   name             : "Daniel Jeremiah"
   avatar           : "/assets/images/daniyyell.jpeg" # Replace with actual avatar path
-  bio              : "Daniel is a seasoned cybersecurity professional with over seven years of experience in Security Operations, Detection Engineering, Vulnerability Assessment, Penetration Testing, and Incident Response. He holds an MSc in Cybersecurity and multiple industry certifications, including CISM, CASP+, eCTHP, CRTO, CySA+, CEH and others. He is highly skilled in malware analysis, threat hunting, SOAR, adversarial simulations, and incident response. Between 2019 and 2022, Daniel actively participated in Bugcrowd and Google's bug bounty programs, submitting over 40 vulnerabilities including six submitted to Google, with a particular interest in IDOR, SSRF, and Blind XSS. As a Senior Security Operations Analyst, Daniel focuses on detecting and responding to threats in high-paced environments. He enjoys analysing and evading malware, and is currently researching adversarial machine learning (AML) within the context of offensive and defensive security."
+  bio              : "Daniel is a cybersecurity professional with over 7+ years of experience in Security Operations, Detection Engineering, Incident Response, and Penetration Testing. He holds an MSc in Cybersecurity and certifications including CISM, CASP+, eCTHP, CRTO, and others. Skilled in malware analysis, threat hunting, SOAR, and adversarial simulations, he has submitted over 40 vulnerabilities via Bugcrowd and Google’s bug bounty programs, including six to Google."
   location         : "London Area, UK"
   email            : #"info@daniyyell.com"
   links:
