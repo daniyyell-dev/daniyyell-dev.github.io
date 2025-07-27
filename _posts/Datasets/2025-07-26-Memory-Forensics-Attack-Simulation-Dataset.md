@@ -34,7 +34,7 @@ Whether you're a student, analyst, or researcher, this resource is intended to p
 
 ## attack1_Unknown_Win10_hard
 
-### Folder: `attack1_Unknown_Win10_hard`
+### `attack1_Unknown_Win10_hard`
 
 ### Summary
 
