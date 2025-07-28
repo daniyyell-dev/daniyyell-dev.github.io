@@ -102,7 +102,7 @@ analytics:
 author:
   name             : "Daniel Jeremiah"
   avatar           : "/assets/images/daniyyell.jpeg" # Replace with actual avatar path
-  bio              : "Daniel is a cybersecurity professional with over 7+ years of experience in Security Operations, Detection Engineering, Incident Response, and VAPT. He holds an MSc in Cybersecurity and certifications including CISM, CASP+, eCTHP, CRTO, and others. Skilled in malware analysis, threat hunting, SOAR, and adversarial simulations, Daniel has submitted over 40 vulnerabilities via Bugcrowd and HackerOne bug bounty programs, including six to Google."
+  bio              : "Daniel is a cybersecurity professional with over eight years of experience in Security Operations, Detection Engineering, Incident Response, and VAPT. He holds an MSc in Cybersecurity and certifications including CISM, CASP+, eCTHP, CRTO, and others. Skilled in malware analysis, threat hunting, SOAR, and adversarial simulations, Daniel has submitted over 40 vulnerabilities via Bugcrowd and HackerOne bug bounty programs, including six to Google."
   location         : "London Area, UK"
   email            : #"info@daniyyell.com"
   links:
