@@ -30,140 +30,36 @@ The cases range in complexity from unknown infections to targeted Cobalt Strike 
 Whether you're a student, analyst, or researcher, this resource is intended to provide practical value for learning and advancing your memory forensics capabilities.
 
 
-
-
-## 1.0 attack1_Unknown_Win10_hard
-
-### `attack1_Unknown_Win10_hard`
-
-### Summary
-
-This folder contains forensic materials from a malware infection on a Windows 10 system where the exact threat could not be identified. Although the infection shows signs of post-compromise activity, the malware family remains undetermined. Live memory was captured during the suspicious activity for further investigation.
-
-### Artifacts
-
-- **Win10_Unknown.mem**: Memory dump from the affected Windows 10 system
-
-### Attack Details
-
-- **Malware**: Unknown
-- **Behaviour**: Exhibits typical signs of compromise and suspicious execution
-- **Persistence**: Not confirmed
-- **Network Activity**: Requires analysis for possible IP connections or beacons
-- **Evasion**: May rely on masquerading or native tool abuse
-
-[DOWNLOAD HERE!](https://drive.google.com/file/d/1RywhSgqoDdDjpXSvrg8d7-Lq90iAuutz/view?usp=sharing)
-
-## 2.0 attack2_process_Injection_hard
-
-### Folder: `attack2_process_Injection_hard`
-
-### Summary
-
-This folder contains forensic evidence of a process injection attack on a Windows 10 host. The attacker injected malicious code into a legitimate process to evade detection and maintain access. Memory was captured while the injection was active.
-
-### Artifacts
-
-- **Process_Injection.mem**: Captured memory from the system under attack
-
-### Attack Details
-
-- **Technique**: Process injection involving code execution within a trusted process
-- **Behaviour**: Malicious threads observed in legitimate system binaries
-- **Persistence**: Not yet determined
-- **Network Activity**: Possible outbound connection or C2 traffic
-- **Evasion**: Code concealed within trusted process context
-
-[DOWNLOAD HERE!](https://drive.google.com/file/d/1R9Wpn1obaUGT0-IOSlTMjR7s2v6ahROR/view?usp=sharing)
-
-## 3.0 attack3_cobaltstrike_beacon_Hard
-
-### Folder: `attack3_cobaltstrike_beacon_Hard`
-
-### Summary
-
-This folder contains memory forensic artefacts from a Windows 10 system compromised using Cobalt Strike. The captured data reflects an active beacon stage, suggesting post-exploitation activity was ongoing at the time of acquisition.
-
-### Artifacts
-
-- ColbaltStrike_memdump.mem: Live memory image containing Cobalt Strike components
-
-### Attack Details
-
-- **Malware**: Cobalt Strike
-- **Behaviour**: Active beacon likely injected into or running alongside system processes
-- **Persistence**: Not confirmed
-- **Network Activity**: C2 activity expected; analysis required for domain/IP extraction
-- **Evasion**: Likely use of obfuscation, named pipes, and in-memory execution
-
-[DOWNLOAD HERE!](https://drive.google.com/file/d/1bdMgyckWjUtzV5HuFqEjXcqEY10Ji3mG/view?usp=sharing)
-
-## 4.0 attack4_AsyncRAT_infection_Intermediate
-
-### Folder: `attack4_AsyncRAT_infection_Intermediate`
-
-### Summary
-
-This folder contains memory forensics materials related to an AsyncRAT infection on a Windows 10 system. The attacker successfully compromised the host and established a remote access session. Live memory was captured during the infection for further analysis.
-
-### Artifacts
-
-- **AsyncRAT_Win10.mem**: Memory dump of the infected system captured post-compromise.
-
-### Attack Details
-
-- **Malware**: AsyncRAT
-- **Behaviour**: Executes as a standalone process alongside normal system activity
-- **Persistence**: Not yet confirmed (may include registry or scheduled task)
-- **Network Activity**: Likely beaconing to C2 over encrypted HTTP/HTTPS
-- **Evasion**: Blended with normal processes to avoid detection, but not injected into them.
-
-[DOWNLOAD HERE!](https://drive.google.com/file/d/11weo6uTh6toXoxzDwqXLJdLXkywtoeTt/view?usp=sharing)
-
-## 5.0 attack5_MasonRAT_intermediate
-
-### Folder: `attack5_MasonRAT_intermediate`
-
-### Summary
-
-This folder contains forensic data related to a MasonRAT infection on a Windows 10 host. The malware executed as a standalone .NET application and maintained remote access capability. Memory was acquired during the active infection phase.
-
-### Artifacts
-
-- **MasonRATmemdump.mem**: Captured memory image containing active RAT process
-
-### Attack Details
-
-- **Malware**: MasonRAT
-- **Behaviour**: Runs as an independent .NET process separate from legitimate applications
-- **Persistence**: Not yet identified
-- **Network Activity**: Indicators of outbound connections likely present
-- **Evasion**: Operates discretely without injecting into other processes
-
-[DOWNLOAD HERE!](https://drive.google.com/file/d/1k-ETi3MpB6bkXzzzz3NYP3c2iQVAW7oK/view?usp=sharing)
-
-## 6.0 attack6_Cobaltstrike_process_inj_Hard
-
-### Folder: `attack6_Cobaltstrike_process_inj_Hard`
-
-### Summary
-
-This folder includes evidence from a Cobalt Strike infection involving process injection on a Windows 10 system. Memory capture occurred while the beacon was active within a legitimate process context.
-
-### Artifacts
-
-- **CobaltStrike_Injection_2.mem**: Memory image taken during the injected beacon session
-
-### Attack Details
-
-- **Malware**: Cobalt Strike
-- **Technique**: Injected beacon into a trusted system process
-- **Persistence**: Unknown
-- **Network Activity**: Potential C2 communication with local or external IP
-- **Evasion**: Executed in memory, concealed through process injection tactics
-
-[DOWNLOAD HERE!](https://drive.google.com/file/d/105g0-zDoD8vlAHoNFzd27UHk2Knj9nrj/view?usp=sharing)
+| **Attack ID** | **Name** | **Technique(s)** | **Malware** | **Persistence** | **Network Activity** | **Evasion** | **Download Link** |
+|---------------|----------|------------------|-------------|-----------------|----------------------|-------------|-------------------|
+| attack1 | Unknown_Win10_hard | Suspicious execution | Unknown | Not confirmed | Possible beaconing | Masquerading, native tool abuse | [Download](https://drive.google.com/file/d/1RywhSgqoDdDjpXSvrg8d7-Lq90iAuutz/view?usp=sharing) |
+| attack2 | process_Injection_hard | Process injection | NimPlantv2 | ScheduleTask | Outbound C2 suspected | Code in legitmate process | [Download](https://drive.google.com/file/d/1R9Wpn1obaUGT0-IOSlTMjR7s2v6ahROR/view?usp=sharing) |
+| attack3 | cobaltstrike_beacon_Hard | Beacon stage | Cobalt Strike | Not confirmed | C2 activity | Named pipes, obfuscation | [Download](https://drive.google.com/file/d/1bdMgyckWjUtzV5HuFqEjXcqEY10Ji3mG/view?usp=sharing) |
+| attack4 | AsyncRAT_infection | Standalone RAT | AsyncRAT | Unknown | Encrypted HTTP/HTTPS beaconing | Blends with normal processes | [Download](https://drive.google.com/file/d/11weo6uTh6toXoxzDwqXLJdLXkywtoeTt/view?usp=sharing) |
+| attack5 | MasonRAT_intermediate | Standalone RAT | MasonRAT | Unknown | Outbound C2 | No injection | [Download](https://drive.google.com/file/d/1k-ETi3MpB6bkXzzzz3NYP3c2iQVAW7oK/view?usp=sharing) |
+| attack6 | cobaltstrike_process_inj_Hard | Process injection | Cobalt Strike | Unknown | C2 suspected | Process injection | [Download](https://drive.google.com/file/d/105g0-zDoD8vlAHoNFzd27UHk2Knj9nrj/view?usp=sharing) |
 
 
 
 **Stay tuned for updating...**
+
+
+
+## References 
+
+## Best Tools for Memory Forensics (.mem Files)
+
+| **Tool** | **Purpose** | **Key Features** | **Link** |
+|----------|-------------|------------------|----------|
+| **Volatility3** | Memory forensics framework | Plugin-based analysis (`pslist`, `malfind`, `netscan`), Python-based, supports modern Windows | [https://volatilityfoundation.org/](https://volatilityfoundation.org/) |
+| **Volatility2** | Legacy version for compatibility | Includes older plugins not yet ported to v3, widely used in training labs | [https://github.com/volatilityfoundation/volatility](https://github.com/volatilityfoundation/volatility) |
+| **Malcat** | Binary and hex analysis | Visual analysis of memory strings, PE structures, YARA scanning | [https://malcat.fr/](https://malcat.fr/) |
+| **YARA** | Pattern-based detection | Write and test rules against memory dumps, detect known malware families | [https://virustotal.github.io/yara/](https://virustotal.github.io/yara/) |
+| **VirusTotal** | Online malware analysis | Hash lookups, static and dynamic scan reports | [https://www.virustotal.com/](https://www.virustotal.com/) |
+| **Strings / FLOSS** | String extraction | Identify embedded commands, URLs, or suspicious code from memory or binaries | [https://github.com/fireeye/flare-floss](https://github.com/fireeye/flare-floss) |
+| **Python** | Scripting & automation | Custom parsing, IOC extraction, bulk memory scanning | [https://www.python.org/](https://www.python.org/) |
+| **MemProcFS** | Mount memory as a filesystem | Browse processes, modules, and artifacts like normal files | [https://github.com/ufrisk/MemProcFS](https://github.com/ufrisk/MemProcFS) |
+| **Memoryze** | Memory acquisition & analysis | Process enumeration, rootkit detection, and keyword search | [https://www.mandiant.com/resources/memoryze](https://www.mandiant.com/resources/memoryze) |
+| **WindowsSCOPE** | GUI-based analysis | Visual disassembly, process inspection, memory structure mapping | [http://windowsscope.com/](http://windowsscope.com/) |
+
+💡 *Tip: For best results, chain tools — for example, use **Volatility3** to identify injected processes, dump the binaries, scan with **YARA**, then investigate them visually with **Malcat**.*
