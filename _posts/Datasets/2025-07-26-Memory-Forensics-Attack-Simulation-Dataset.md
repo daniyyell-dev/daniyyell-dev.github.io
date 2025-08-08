@@ -25,7 +25,7 @@ This post presents a curated **memory forensics dataset** designed to support re
 
 Each scenario includes a detailed description, artefacts (e.g., `.mem` files), and relevant attack characteristics such as evasion techniques, persistence indicators, and suspected C2 activity.
 
-The cases range in complexity from unknown infections to targeted Cobalt Strike intrusions, offering varied examples useful for building or testing memory analysis workflows using tools like **Volatility**, **YARA**, and **Malcat**.
+The cases range in complexity from unknown infections to targeted Cobalt Strike intrusions, offering varied examples useful for building or testing memory analysis workflows using tools like **Volatility3**, **YARA**, and **Malcat**.
 
 Whether you're a student, analyst, or researcher, this resource is intended to provide practical value for learning and advancing your memory forensics capabilities.
 
@@ -42,24 +42,3 @@ Whether you're a student, analyst, or researcher, this resource is intended to p
 
 
 **Stay tuned for updating...**
-
-
-
-## References 
-
-## Best Tools for Memory Forensics (.mem Files)
-
-| **Tool** | **Purpose** | **Key Features** | **Link** |
-|----------|-------------|------------------|----------|
-| **Volatility3** | Memory forensics framework | Plugin-based analysis (`pslist`, `malfind`, `netscan`), Python-based, supports modern Windows | [https://volatilityfoundation.org/](https://volatilityfoundation.org/) |
-| **Volatility2** | Legacy version for compatibility | Includes older plugins not yet ported to v3, widely used in training labs | [https://github.com/volatilityfoundation/volatility](https://github.com/volatilityfoundation/volatility) |
-| **Malcat** | Binary and hex analysis | Visual analysis of memory strings, PE structures, YARA scanning | [https://malcat.fr/](https://malcat.fr/) |
-| **YARA** | Pattern-based detection | Write and test rules against memory dumps, detect known malware families | [https://virustotal.github.io/yara/](https://virustotal.github.io/yara/) |
-| **VirusTotal** | Online malware analysis | Hash lookups, static and dynamic scan reports | [https://www.virustotal.com/](https://www.virustotal.com/) |
-| **Strings / FLOSS** | String extraction | Identify embedded commands, URLs, or suspicious code from memory or binaries | [https://github.com/fireeye/flare-floss](https://github.com/fireeye/flare-floss) |
-| **Python** | Scripting & automation | Custom parsing, IOC extraction, bulk memory scanning | [https://www.python.org/](https://www.python.org/) |
-| **MemProcFS** | Mount memory as a filesystem | Browse processes, modules, and artifacts like normal files | [https://github.com/ufrisk/MemProcFS](https://github.com/ufrisk/MemProcFS) |
-| **Memoryze** | Memory acquisition & analysis | Process enumeration, rootkit detection, and keyword search | [https://www.mandiant.com/resources/memoryze](https://www.mandiant.com/resources/memoryze) |
-| **WindowsSCOPE** | GUI-based analysis | Visual disassembly, process inspection, memory structure mapping | [http://windowsscope.com/](http://windowsscope.com/) |
-
-💡 *Tip: For best results, chain tools — for example, use **Volatility3** to identify injected processes, dump the binaries, scan with **YARA**, then investigate them visually with **Malcat**.*
