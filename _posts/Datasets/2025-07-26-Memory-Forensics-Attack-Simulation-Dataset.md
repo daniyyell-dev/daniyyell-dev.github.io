@@ -15,7 +15,11 @@ date: 2025-07-20
 
 ## Zenodo migration in progress
 
-The six memory images are being transferred to Zenodo. Upload and publication are still in progress, so the Google Drive download links in the scenario table remain available for now. The final Zenodo download links will be activated here once all six files have been uploaded, verified, and published. This website remains the guide to the attack scenarios and memory analysis context.
+<p><a href="https://zenodo.org/records/23575239" class="btn btn--primary btn--x-large btn--block" aria-describedby="zenodo-publication-status">DOWNLOAD HERE</a></p>
+
+<p id="zenodo-publication-status"><strong>Zenodo publication pending:</strong> The button opens the reserved Zenodo record, which will become publicly available after upload and publication are complete. Use the Google Drive links in the table below until then.</p>
+
+The six memory images are being transferred to Zenodo. Individual Zenodo file links will replace the Google Drive links once all six files have been uploaded, verified, and published. This website remains the guide to the attack scenarios and memory analysis context.
 
 **Reserved Zenodo DOI:** `10.5281/zenodo.23575239` (not yet active)  
 **Dataset version:** 1.0.0  
