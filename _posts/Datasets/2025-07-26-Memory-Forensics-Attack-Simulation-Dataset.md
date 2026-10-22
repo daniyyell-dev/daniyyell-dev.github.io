@@ -13,6 +13,14 @@ date: 2025-07-20
 
 
 
+## Dataset downloads on Zenodo
+
+The six memory images have moved from Google Drive to [Zenodo](https://zenodo.org/records/23575239). Use the download links in the scenario table below, or visit the [dataset DOI](https://doi.org/10.5281/zenodo.23575239) for the complete release. This website remains the guide to the attack scenarios and memory analysis context.
+
+**Version:** 1.0.0  
+**Original publication date:** 20 July 2025  
+**Dataset licence:** Creative Commons Attribution 4.0 International (CC BY 4.0)
+
 # Introduction
 
 This post presents a curated **memory forensics dataset** designed to support research, detection engineering, and hands-on training in the fields of **malware analysis**, **incident response**, and **threat simulation**. The dataset contains memory dumps collected from controlled attack scenarios on Windows 10 systems, covering various techniques such as:
@@ -32,13 +40,15 @@ Whether you're a student, analyst, or researcher, this resource is intended to p
 
 | **Attack ID** | **Name** | **Technique(s)** | **Malware** | **Persistence** | **Network Activity** | **Evasion** | **Download Link** |
 |---------------|----------|------------------|-------------|-----------------|----------------------|-------------|-------------------|
-| attack1 | Unknown_Win10_hard | Suspicious execution | Unknown | Not confirmed | Possible beaconing | Masquerading, native tool abuse | [Download](https://drive.google.com/file/d/1RywhSgqoDdDjpXSvrg8d7-Lq90iAuutz/view?usp=sharing) |
-| attack2 | process_Injection_hard | Process injection | NimPlantv2 | ScheduleTask | Outbound C2 suspected | Code in legitmate process | [Download](https://drive.google.com/file/d/1R9Wpn1obaUGT0-IOSlTMjR7s2v6ahROR/view?usp=sharing) |
-| attack3 | cobaltstrike_beacon_Hard | Beacon stage | Cobalt Strike | Not confirmed | C2 activity | Named pipes, obfuscation | [Download](https://drive.google.com/file/d/1bdMgyckWjUtzV5HuFqEjXcqEY10Ji3mG/view?usp=sharing) |
-| attack4 | AsyncRAT_infection | Standalone RAT | AsyncRAT | Unknown | Encrypted HTTP/HTTPS beaconing | Blends with normal processes | [Download](https://drive.google.com/file/d/11weo6uTh6toXoxzDwqXLJdLXkywtoeTt/view?usp=sharing) |
-| attack5 | MasonRAT_intermediate | Standalone RAT | MasonRAT | Unknown | Outbound C2 | No injection | [Download](https://drive.google.com/file/d/1k-ETi3MpB6bkXzzzz3NYP3c2iQVAW7oK/view?usp=sharing) |
-| attack6 | cobaltstrike_process_inj_Hard | Process injection | Cobalt Strike | Unknown | C2 suspected | Process injection | [Download](https://drive.google.com/file/d/105g0-zDoD8vlAHoNFzd27UHk2Knj9nrj/view?usp=sharing) |
+| attack1 | Unknown_Win10_hard | Suspicious execution | Unknown | Not confirmed | Possible beaconing | Masquerading, native tool abuse | [Download](https://zenodo.org/records/23575239/files/Win10_Unknown.mem?download=1) |
+| attack2 | process_Injection_hard | Process injection | NimPlantv2 | ScheduleTask | Outbound C2 suspected | Code in legitimate process | [Download](https://zenodo.org/records/23575239/files/attack2_process_Injection.mem?download=1) |
+| attack3 | cobaltstrike_beacon_Hard | Beacon stage | Cobalt Strike | Not confirmed | C2 activity | Named pipes, obfuscation | [Download](https://zenodo.org/records/23575239/files/ColbaltStrike_memdump.mem?download=1) |
+| attack4 | AsyncRAT_infection | Standalone RAT | AsyncRAT | Unknown | Encrypted HTTP/HTTPS beaconing | Blends with normal processes | [Download](https://zenodo.org/records/23575239/files/AsyncRAT_Win10.mem?download=1) |
+| attack5 | MasonRAT_intermediate | Standalone RAT | MasonRAT | Unknown | Outbound C2 | No injection | [Download](https://zenodo.org/records/23575239/files/MasonRATmemdump.mem?download=1) |
+| attack6 | cobaltstrike_process_inj_Hard | Process injection | Cobalt Strike | Unknown | C2 suspected | Process injection | [Download](https://zenodo.org/records/23575239/files/CobaltStrike_Injection_2.mem?download=1) |
 
 
 
-**Stay tuned for updating...**
+## Citation
+
+Jeremiah, Daniel, and Rafiq, Husnain. (2025). *Memory Forensics Attack Simulation Dataset* (Version 1.0.0) [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.23575239](https://doi.org/10.5281/zenodo.23575239).
