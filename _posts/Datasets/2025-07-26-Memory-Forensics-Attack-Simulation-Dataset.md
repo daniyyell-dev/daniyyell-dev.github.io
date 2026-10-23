@@ -43,14 +43,22 @@ The cases range in complexity from unknown infections to targeted Cobalt Strike 
 Whether you're a student, analyst, or researcher, this resource is intended to provide practical value for learning and advancing your memory forensics capabilities.
 
 
+## Download formats
+
+Four memory images are provided as raw `.mem` files. `Win10_Unknown.mem.gz` and `CobaltStrike_Injection_2.mem.gz` are losslessly compressed gzip archives; extract them with 7-Zip to restore the original `.mem` images, or run:
+
+```sh
+gzip -d Win10_Unknown.mem.gz CobaltStrike_Injection_2.mem.gz
+```
+
 | **Attack ID** | **Name** | **Technique(s)** | **Malware** | **Persistence** | **Network Activity** | **Evasion** | **Download Link** |
 |---------------|----------|------------------|-------------|-----------------|----------------------|-------------|-------------------|
-| attack1 | Unknown_Win10_hard | Suspicious execution | Unknown | Not confirmed | Possible beaconing | Masquerading, native tool abuse | [Download](https://zenodo.org/records/23575239/files/Win10_Unknown.mem?download=1) |
+| attack1 | Unknown_Win10_hard | Suspicious execution | Unknown | Not confirmed | Possible beaconing | Masquerading, native tool abuse | [Download (.mem.gz)](https://zenodo.org/records/23575239/files/Win10_Unknown.mem.gz?download=1) |
 | attack2 | process_Injection_hard | Process injection | NimPlantv2 | ScheduleTask | Outbound C2 suspected | Code in legitimate process | [Download](https://zenodo.org/records/23575239/files/attack2_process_Injection.mem?download=1) |
 | attack3 | cobaltstrike_beacon_Hard | Beacon stage | Cobalt Strike | Not confirmed | C2 activity | Named pipes, obfuscation | [Download](https://zenodo.org/records/23575239/files/ColbaltStrike_memdump.mem?download=1) |
 | attack4 | AsyncRAT_infection | Standalone RAT | AsyncRAT | Unknown | Encrypted HTTP/HTTPS beaconing | Blends with normal processes | [Download](https://zenodo.org/records/23575239/files/AsyncRAT_Win10.mem?download=1) |
 | attack5 | MasonRAT_intermediate | Standalone RAT | MasonRAT | Unknown | Outbound C2 | No injection | [Download](https://zenodo.org/records/23575239/files/MasonRATmemdump.mem?download=1) |
-| attack6 | cobaltstrike_process_inj_Hard | Process injection | Cobalt Strike | Unknown | C2 suspected | Process injection | [Download](https://zenodo.org/records/23575239/files/CobaltStrike_Injection_2.mem?download=1) |
+| attack6 | cobaltstrike_process_inj_Hard | Process injection | Cobalt Strike | Unknown | C2 suspected | Process injection | [Download (.mem.gz)](https://zenodo.org/records/23575239/files/CobaltStrike_Injection_2.mem.gz?download=1) |
 
 
 
