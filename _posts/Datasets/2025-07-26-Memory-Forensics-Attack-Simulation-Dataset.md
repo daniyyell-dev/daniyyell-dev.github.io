@@ -13,15 +13,15 @@ date: 2025-07-20
 
 
 
-## Zenodo migration in progress
+## Dataset downloads on Zenodo
 
-<p><a href="https://zenodo.org/records/23575239" class="btn btn--primary btn--x-large btn--block" aria-describedby="zenodo-publication-status">DOWNLOAD HERE</a></p>
+<p><a href="https://zenodo.org/records/23575239" class="btn btn--primary btn--x-large btn--block" aria-describedby="zenodo-download-status">DOWNLOAD HERE</a></p>
 
-<p id="zenodo-publication-status"><strong>Zenodo publication pending:</strong> The button opens the reserved Zenodo record, which will become publicly available after upload and publication are complete. Use the Google Drive links in the table below until then.</p>
+<p id="zenodo-download-status">The six memory images are now hosted on Zenodo. Use the button above to open the complete dataset record, or download individual files from the scenario table below.</p>
 
-The six memory images are being transferred to Zenodo. Individual Zenodo file links will replace the Google Drive links once all six files have been uploaded, verified, and published. This website remains the guide to the attack scenarios and memory analysis context.
+This website remains the guide to the attack scenarios and memory analysis context. The dataset is archived on Zenodo with a persistent DOI for citation and access.
 
-**Reserved Zenodo DOI:** `10.5281/zenodo.23575239` (not yet active)  
+**Dataset DOI:** [10.5281/zenodo.23575239](https://doi.org/10.5281/zenodo.23575239)  
 **Dataset version:** 1.0.0  
 **Original publication date:** 20 July 2025  
 **Dataset licence:** Creative Commons Attribution 4.0 International (CC BY 4.0)
@@ -43,17 +43,25 @@ The cases range in complexity from unknown infections to targeted Cobalt Strike 
 Whether you're a student, analyst, or researcher, this resource is intended to provide practical value for learning and advancing your memory forensics capabilities.
 
 
+## Download formats
+
+Four memory images are provided as raw `.mem` files. `Win10_Unknown.mem.gz` and `CobaltStrike_Injection_2.mem.gz` are losslessly compressed gzip archives; extract them with 7-Zip to restore the original `.mem` images, or run:
+
+```sh
+gzip -d Win10_Unknown.mem.gz CobaltStrike_Injection_2.mem.gz
+```
+
 | **Attack ID** | **Name** | **Technique(s)** | **Malware** | **Persistence** | **Network Activity** | **Evasion** | **Download Link** |
 |---------------|----------|------------------|-------------|-----------------|----------------------|-------------|-------------------|
-| attack1 | Unknown_Win10_hard | Suspicious execution | Unknown | Not confirmed | Possible beaconing | Masquerading, native tool abuse | [Download](https://drive.google.com/file/d/1RywhSgqoDdDjpXSvrg8d7-Lq90iAuutz/view?usp=sharing) |
-| attack2 | process_Injection_hard | Process injection | NimPlantv2 | ScheduleTask | Outbound C2 suspected | Code in legitimate process | [Download](https://drive.google.com/file/d/1R9Wpn1obaUGT0-IOSlTMjR7s2v6ahROR/view?usp=sharing) |
-| attack3 | cobaltstrike_beacon_Hard | Beacon stage | Cobalt Strike | Not confirmed | C2 activity | Named pipes, obfuscation | [Download](https://drive.google.com/file/d/1bdMgyckWjUtzV5HuFqEjXcqEY10Ji3mG/view?usp=sharing) |
-| attack4 | AsyncRAT_infection | Standalone RAT | AsyncRAT | Unknown | Encrypted HTTP/HTTPS beaconing | Blends with normal processes | [Download](https://drive.google.com/file/d/11weo6uTh6toXoxzDwqXLJdLXkywtoeTt/view?usp=sharing) |
-| attack5 | MasonRAT_intermediate | Standalone RAT | MasonRAT | Unknown | Outbound C2 | No injection | [Download](https://drive.google.com/file/d/1k-ETi3MpB6bkXzzzz3NYP3c2iQVAW7oK/view?usp=sharing) |
-| attack6 | cobaltstrike_process_inj_Hard | Process injection | Cobalt Strike | Unknown | C2 suspected | Process injection | [Download](https://drive.google.com/file/d/105g0-zDoD8vlAHoNFzd27UHk2Knj9nrj/view?usp=sharing) |
+| attack1 | Unknown_Win10_hard | Suspicious execution | Unknown | Not confirmed | Possible beaconing | Masquerading, native tool abuse | [Download (.mem.gz)](https://zenodo.org/records/23575239/files/Win10_Unknown.mem.gz?download=1) |
+| attack2 | process_Injection_hard | Process injection | NimPlantv2 | ScheduleTask | Outbound C2 suspected | Code in legitimate process | [Download](https://zenodo.org/records/23575239/files/attack2_process_Injection.mem?download=1) |
+| attack3 | cobaltstrike_beacon_Hard | Beacon stage | Cobalt Strike | Not confirmed | C2 activity | Named pipes, obfuscation | [Download](https://zenodo.org/records/23575239/files/ColbaltStrike_memdump.mem?download=1) |
+| attack4 | AsyncRAT_infection | Standalone RAT | AsyncRAT | Unknown | Encrypted HTTP/HTTPS beaconing | Blends with normal processes | [Download](https://zenodo.org/records/23575239/files/AsyncRAT_Win10.mem?download=1) |
+| attack5 | MasonRAT_intermediate | Standalone RAT | MasonRAT | Unknown | Outbound C2 | No injection | [Download](https://zenodo.org/records/23575239/files/MasonRATmemdump.mem?download=1) |
+| attack6 | cobaltstrike_process_inj_Hard | Process injection | Cobalt Strike | Unknown | C2 suspected | Process injection | [Download (.mem.gz)](https://zenodo.org/records/23575239/files/CobaltStrike_Injection_2.mem.gz?download=1) |
 
 
 
 ## Citation
 
-Jeremiah, Daniel, and Rafiq, Husnain. (2025). *Memory Forensics Attack Simulation Dataset* (Version 1.0.0) [Data set]. [Dataset documentation and downloads](https://daniyyell.com/datasets/Memory-Forensics-Attack-Simulation-Dataset/).
+Jeremiah, Daniel, and Rafiq, Husnain. (2025). *Memory Forensics Attack Simulation Dataset* (Version 1.0.0) [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.23575239](https://doi.org/10.5281/zenodo.23575239).
